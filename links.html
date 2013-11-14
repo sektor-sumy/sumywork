@@ -1,0 +1,19 @@
+<head>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+$(document).ready(function(){
+  $("a").click(function(){
+    if (!$(this).hasClass("selected")) 
+    {
+      $(this).clone(true).insertAfter(this);
+      $(this).clone(true).insertAfter(this);
+      $(this).addClass("selected");
+      $(this).css({'background-color' : 'yellow', 'font-weight' : 'bolder'});
+    }   
+  });
+});
+</script>
+</head>
+<body>
+<a href="#" onclick="return false;">Clone Me!</button>
+</body>
